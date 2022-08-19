@@ -5,9 +5,8 @@ import {
   InMemoryCache,
   ApolloProvider,
   createHttpLink,
-  setContext,
 } from "@apollo/client";
-
+import { setContext } from "@apollo/client/link/context";
 const httpLink = createHttpLink({
   uri: "https://safe-depths-60938.herokuapp.com/",
 });
